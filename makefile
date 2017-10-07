@@ -1,3 +1,5 @@
+include ../gmd
+
 #CWD= $(warning Call to shell)$(shell pwd)  # many times
 CWD:=$(warning call to shell)$(shell pwd)
 SRC_DIR = $(CWD)/src/
@@ -19,4 +21,5 @@ print-%:
 clean:
 	rm -rf $(OBJ_DIR)*.o
 	rm -rf exec 
+$(__BREAKPOINT)
 
