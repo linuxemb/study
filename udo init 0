@@ -1,0 +1,54 @@
+[33mcommit d259ca002d7e13aef9c000f08fc738f468408e88[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 14 22:41:43 2017 -0400
+
+    add 157.c  read keyboard and sort and display char array point
+
+[33mcommit c0929a5736f592ba82a1dc8486ea1d8d13b35460[m
+Author: sanda15 <itss07@gmail.com>
+Date:   Mon Oct 9 18:11:05 2017 -0400
+
+    Update README.md
+
+[33mcommit 9282ca522acc1cc24a83135f33da32a5b65a9cb1[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 16:43:11 2017 -0700
+
+    update to gmd
+
+[33mcommit 139f7294e594de31916a3f7ebb89e798d6d1bf65[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 16:41:08 2017 -0700
+
+    add debuger and gmd
+
+[33mcommit 77d02ff4b013b8ec1bc1ee84c44b26daaf5c3931[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 15:47:27 2017 -0700
+
+     MAKEFIEL debug and src/obj
+
+[33mcommit 9bbdae5f656bfc7edbf1013edfddec34a0952f99[m
+Merge: f58966d 8683fba
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 15:33:08 2017 -0700
+
+    Merge branch 'master' of https://github.com/linuxemb/study
+
+[33mcommit f58966de5ebb074ddc773a8c45e408b068d5c370[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 15:31:17 2017 -0700
+
+     makefile with debug infor and src.obj folder
+
+[33mcommit 8683fba88068785d25ad2be37e494e0bfc9eedd5[m
+Author: sanda15 <itss07@gmail.com>
+Date:   Sat Oct 7 16:57:10 2017 -0400
+
+    Create README.md
+
+[33mcommit 8322a49b706eed329fbaa179cf3dc3b2852d3a06[m
+Author: linuxemb <itss07@gmail.com>
+Date:   Sat Oct 7 13:06:58 2017 -0700
+
+    make demo

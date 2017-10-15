@@ -8,7 +8,7 @@ OBJS= $(OBJ_DIR)foo.o $(OBJ_DIR)bar.o $(OBJ_DIR)baz.o
 vpath %.c $(SRC_DIR)
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c 
 	@echo Make $@ from $<
-	gcc  -c -o  $@ $<
+	gcc  -c   $@ $<
 
 exec: $(OBJS)
 	@echo $? $(OBJS)
