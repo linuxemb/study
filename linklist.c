@@ -50,6 +50,24 @@ int main()
 	new -> next = head->next; // always bever
 	head -> next = new;  //lost head next 
 	strcpy (new->name, "Beaver");
+	//delete 1st element
+	head = head->next;
+
+	// delete last element
+
+	LINK cur1,cur2;
+	cur1=head;
+	cur2=cur1-> next;
+
+	while (cur2->next  !=NULL)
+	{
+		cur1=cur2;
+		cur2=cur1->next;
+	}
+
+	cur1->next = NULL;
+//	if(head== cur1)
+//		head = NULL;
 
 	// print all element
 	current = head;
