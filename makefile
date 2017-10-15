@@ -1,4 +1,4 @@
-include ../gmd
+include gmd
 
 #CWD= $(warning Call to shell)$(shell pwd)  # many times
 CWD:=$(warning call to shell)$(shell pwd)

@@ -1,3 +1,4 @@
+include ../gmd
 CC=gcc
 ifeq ($(DEBUG), y)
 CFLAGS:=-g
@@ -25,4 +26,4 @@ clean:
 
 distclean: clean
 	@rm exec
-
+$(__BREAKPOINT)
