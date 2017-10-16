@@ -1,14 +1,9 @@
 /***************************************************************************
-*    Copyright 2017 Mitel Networks
-*    All Rights Reserved
 *
 ****************************************************************************
 *
 ****************************************************************************
-*    Description:
-*
-* Software Uart for 6930_SIP  to hook i680 keyboard
-*
+swuart*    Description:
 ****************************************************************************/
 #include "cfg_global.h"
 #include <linux/sched.h>
@@ -320,6 +315,3 @@ module_init( swuart_init );
 module_exit( swuart_exit );
 
 
-MODULE_AUTHOR("Mitel");
-MODULE_DESCRIPTION( "Mitel SWUART driver" );
-MODULE_LICENSE( "GPL" );
