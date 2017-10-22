@@ -217,7 +217,7 @@ static int keydev_init(void)
   key_tail  = key_head = key_devp;
 
 
-// memory map
+// memory map for using readb
   key_base = (unsigned long) ioremap(key_base, 8);
 
  
