@@ -1,6 +1,9 @@
 #include  <stdio.h>
 #include <stdlib.h>
 // insert elem in any position
+// reverse a link list
+// recursive print
+// reverse recursive print
 
 struct Node {
 
@@ -16,7 +19,7 @@ void insert(int data, int n)
 	P tmp1  = (P) malloc(sizeof(Myn));
 	tmp1 -> data = data;
 	tmp1-> next  == NULL;
-//	if(n==1)
+	//	if(n==1)
 	{
 		tmp1->   next = head;
 		head = tmp1;
@@ -31,6 +34,29 @@ void insert(int data, int n)
 	tmp1 -> next =  tmp2 -> next;
 }  // tmp is new node, tmp2 is positionto insert tmp1
 
+
+P  reverse()
+{
+
+	P prev,current, next;
+
+	current =head;
+	prev = NULL;
+	while (current != NULL)
+	{
+
+		next = current->next;
+		current->next = prev;
+		// update itrater to working node
+		prev = current; // prev save last node
+
+		current = next;
+	}
+	//update head
+	head = prev;
+	return head;
+}
+
 void print() 
 {
 	struct Node* p= head;
@@ -43,6 +69,21 @@ void print()
 	printf("\n");
 
 }
+
+void reverse_print(P p)
+{
+	if(p==NULL) return;
+	reverse_print ( p-> next); // recursive call
+
+	printf("%d \t",p->data);
+}
+// not use lot of stack, becase it called printf ahead of recruseive
+void recursive_print(P p)
+{
+	if(p==NULL) return;
+	printf("%d",p->data);
+	recursive_print ( p-> next); // recursive call
+}
 int main ()
 {
 	head = NULL;
@@ -51,5 +92,10 @@ int main ()
 	insert(4,1);
 	insert(5,2);
 	print();
-
+	recursive_print(head);
+	reverse(head);
+	print();
+	printf("revserse---d");
+	reverse_print(head);
+	recursive_print(head);
 }
