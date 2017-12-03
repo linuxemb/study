@@ -1,0 +1,15 @@
+TARGET = sieve
+CFLAGS= -g3 -Wall -Wextra 
+SRC = $(wildcard *.c) 
+obj= $(SRC:.c=.o)
+LDFLAGS= -lpthread -lm 
+cc=gcc
+myprog: $(obj)
+	echo $(SRC)
+	echo $(obj)
+	$(CC) $(CFLAGS)  -o $@ $^  $(LDFLAGS)
+#sieve: sieve.c
+	#gcc -o sieve -g3 -Wall -Wextra -lm -lpthread sieve.c
+.PHONY: clean
+clean:
+	rm -f $(obj) myprog
