@@ -70,6 +70,21 @@ void print()
 
 }
 
+
+void   recersive_reverse(struct Node*  p)
+{
+	if(p->next == NULL) 
+	{
+		head=p;
+		return ;
+	} 
+	recersive_reverse(p-> next) ;
+	struct Node* q = p -> next;
+	q->next = p;
+        p -> next = NULL;
+}
+
+
 void reverse_print(P p)
 {
 	if(p==NULL) return;
@@ -92,10 +107,11 @@ int main ()
 	insert(4,1);
 	insert(5,2);
 	print();
-	recursive_print(head);
-	reverse(head);
+	//	recursive_print(head);
+	//	reverse(head);
+	recersive_reverse(head);
+
 	print();
-	printf("revserse---d");
-	reverse_print(head);
-	recursive_print(head);
+	//reverse_print(head);
+	//	recursive_print(head);
 }
