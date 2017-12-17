@@ -1,0 +1,12 @@
+APPS    = ibm_cairo_logo 
+
+CFLAGS  = -Wall -g
+LDFLAGS = -lm
+
+CFLAGS  += `pkg-config gtk+-3.0 --cflags gtk+-3.0`
+LDFLAGS += `pkg-config gtk+-3.0 --libs gtk+-3.0 `
+
+all: $(APPS) 
+
+clean:
+	rm -f $(APPS)
