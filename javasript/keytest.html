@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang ='en'>
+
+	<head>
+
+		<title>KEY test </title>
+		<script type="text/javascript" >
+	function displayKey(e) 
+	{
+		// which keypresssed?
+		if(e.keyCode) {
+			var keyCode = e.keyCode;
+			console.log(keyCode);
+		}  else
+		 {
+			var keyCode = e.which;
+			console.log(keyCode);
+		}
+	
+	character = String.fromCharCode(keyCode);
+
+	// find the obj for hte destionation paragraph
+	var keysParagraph = document.getElementById('keys');
+
+	// add the char to the paragraph
+	keysParagraph.innerHTML += character;
+	console.log(character);
+}
+ </script>
+	</head>
+	<body onkeypress= "displayKey(event)">
+		<h1> Display typed charac</h1>
+		<p> this doc included sa simple script that displas the keys you typed as a new parapgh below. type a few keys to tru it</p>
+
+		<div id="keys"></div>
+
+	</body>
+
+</html>
+
+
+
+

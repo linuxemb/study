@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang ='en'>
+
+	<head>
+
+		<title> Time and  greate example</title>
+	</head>
+	<body>
+		<h1> Curent time and date </h1>
+		<script type="text/javascript"   src="greeting.js" >   </script>
+
+
+		<a class="btn" href="http://www.google.ca" >Go to google</a>
+<button class="btn" type="submit">Button</button>
+<input class="btn" type="button" value="Input">
+<input class="btn" type="submit" value="Submit">
+	
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript again!"'>Click Me!; 
+</button>
+<a herf="#buttom" onmouseover ="doIt()"; > Click to call doit.</a>
+
+<button type="button" onclick='doIt()';>Click to do it!; 
+
+</button>
+<!--USe event name and code ot invoke envet handler no need <script> tag -->
+	<!-- <a href="http://www.google.ca"
+	onmouseover="alert('you moved over the link');"> 
+	this is a link. </a>
+ -->
+
+<!-- defin event hander with javarscript  -->
+<a href= "http://www.google.com/" id = "link"> this is google clik to call doit "<br>"</a>
+
+<!--Use mugtil conditions-->
+<script type="text/javascript">
+
+	//for LOOP
+	for(var i =1; i<10; i++) {
+		console.log(i);
+		document.write("i=" + i +"<br>");
+	}
+	
+//if(button == "ClickMe"）{
+	document.write("don");
+	console.log('dond');
+
+function doIt()
+{
+	console.log("do it\n");
+	alert("you clicked the mouse");
+	document.write("do it...\n")
+}
+
+var link1_obj = document.getElementById("link");
+link1_obj.onclick = doIt();
+
+
+</script>
+	</body>
+
+
+
+
+
+
+</html>
+
+
+
+
