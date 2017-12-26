@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<quiz>
+	<question>What DOM object contain URL informatin for the window?</question>
+	<answer>location</answer>
+	<question>Which method of the doc obj find th obj for an element?</question>
+	<answer>getElementById</answer>
+	<question>If you declear a variable outside a function, is it blobal or local?</question>
+	<answer>global</answer>
+	<question>What is th eformal standard for a Javascript language called?</question>
+	<answer>ECMAScript</answer>
+</quiz>
+
+
+
